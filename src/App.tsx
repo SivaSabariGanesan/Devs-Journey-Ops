@@ -682,7 +682,7 @@ function App() {
             <div className="signoff-plaque-top">
               <div className="signoff-status-badge">
                 <span className="signoff-live-dot" />
-                <span>TENURE CONCLUDED · MARCH 2026</span>
+                <span>TENURE CONCLUDED · OCTOBER 2026</span>
               </div>
               <span className="signoff-serial">ARCHIVE REF: DEVS-REC-2426</span>
             </div>
