@@ -87,29 +87,36 @@ const milestones = [
     note: 'BOARD MEMBER · LEARNING BY DOING',
   },
   {
-    year: 'THE VISION',
+    year: 'THE PUSH',
     index: '02',
+    title: 'Breaking the comfort zone.',
+    body: 'Real growth at DEVS-REC demanded stepping far outside what felt safe. Deep gratitude to Giridharan E, Suriya M, Sanjana B, and Akash MK—who constantly challenged my hesitations, believed in what I was capable of, and pushed me past my comfort zone to tackle bigger responsibilities.',
+    note: 'DEVS-REC · GIRIDHARAN E · SURIYA M · SANJANA B · AKASH MK',
+  },
+  {
+    year: 'THE VISION',
+    index: '03',
     title: 'More than just code.',
     body: 'Alongside Gokulakrishnan K and Akash MK, I shared a vision for DevsLab: creating room for people from every domain to collaborate on technology. Different backgrounds, different strengths, one shared instinct to build.',
     note: 'DEVSLAB · CROSS-DOMAIN COLLABORATION',
   },
   {
     year: '2025—26',
-    index: '03',
+    index: '04',
     title: 'Taking ownership.',
     body: 'As Operations Head, I led the DEVS-REC technical team. The work expanded from individual contributions to coordinating people, supporting projects, solving problems, and helping turn ideas into reliable systems.',
     note: 'OPERATIONS HEAD · TECH TEAM LEAD',
   },
   {
     year: 'THE PEOPLE',
-    index: '04',
+    index: '05',
     title: 'Learning goes both ways.',
     body: 'Leading Radium and the Film Club OTT platform gave me the chance to teach and guide my juniors while building real products. Sharing what I had learned—and watching others become more confident—became one of the most rewarding parts of the journey.',
     note: 'RADIUM · FILM CLUB OTT · MENTORSHIP',
   },
   {
     year: 'THE NEXT CHAPTER',
-    index: '05',
+    index: '06',
     title: 'Make room for what comes next.',
     body: 'Towards the end of my tenure, I contributed to the DEVS Core Recruitment Portal, helping create a path for the next generation. More than 50 applicants applied to become part of the incoming core team.',
     note: 'CORE RECRUITMENT · 50+ APPLICANTS',
@@ -661,7 +668,12 @@ function App() {
               how to design reliable architectures, lead teams with empathy, and mentor juniors through production launches.
             </p>
             <p>
-              To Gokulakrishnan K, Akash MK, my teammates, my juniors, and everyone who was part of this chapter—thank you.
+              None of this transformation would have been possible without breaking out of my comfort zone at DEVS-REC.
+              A deep, sincere thank you to <strong>Giridharan E</strong>, <strong>Suriya M</strong>, <strong>Sanjana B</strong>, and <strong>Akash MK</strong>—for
+              pushing me past my boundaries, refusing to let me stay comfortable, and believing in what I could achieve even before I saw it myself.
+            </p>
+            <p>
+              To Gokulakrishnan K, Akash MK, my teammates, my juniors, and everyone across the DEVS-REC community who was part of this chapter—thank you.
               The projects will evolve, the technologies will modernize, but the shared memories and camaraderie endure.
             </p>
           </div>
@@ -690,6 +702,7 @@ function App() {
               </div>
 
               <div className="signoff-tags">
+                <span className="signoff-tag">Breaking Comfort Zones</span>
                 <span className="signoff-tag">DevsLab Vision</span>
                 <span className="signoff-tag">Hostel App & Timetable</span>
                 <span className="signoff-tag">Titanium 2026 Lead</span>
