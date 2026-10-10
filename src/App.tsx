@@ -64,7 +64,7 @@ const projects: Project[] = [
     number: '05',
     name: 'Film Club OTT',
     category: 'MEDIA PLATFORM',
-    description: 'A custom streaming platform engineered specifically for the Film Club. We build for colleges, other clubs, and our community.',
+    description: 'A custom streaming platform engineered specifically for the Film Club. We build for our college, our club, and other clubs.',
     detail: 'Mentorship-driven architecture & community media delivery',
     tag: 'CLUBS & MEDIA',
   },
@@ -402,9 +402,9 @@ function App() {
               the vision behind DevsLab.
             </p>
             <div className="manifesto-foot">
-              <span>DIFFERENT DOMAINS.</span>
-              <span>SHARED OWNERSHIP.</span>
-              <span>BETTER THINGS, TOGETHER.</span>
+              <span>WE BUILD FOR OUR COLLEGE.</span>
+              <span>WE BUILD FOR OUR CLUB.</span>
+              <span>WE BUILD FOR OTHER CLUBS.</span>
             </div>
           </div>
         </section>
@@ -443,15 +443,21 @@ function App() {
         <section className="work section-pad" id="work">
           <div className="section-label" data-reveal>
             <span>04 / SELECTED WORK</span>
-            <span>BUILT WITH THE TEAM</span>
+            <span>WE BUILD FOR OUR COLLEGE · OUR CLUB · OTHER CLUBS</span>
           </div>
           <div className="work-heading" data-reveal>
-            <h2>
-              Not just screens.
-              <br />
-              <span className="highlight-gradient">Systems.</span>
-            </h2>
-            <p>We build for colleges, other clubs, and our community. Platforms engineered for people and real-world scale.</p>
+            <div>
+              <h2>
+                Not just screens.
+                <br />
+                <span className="highlight-gradient">Systems.</span>
+              </h2>
+              <div className="work-creed-badge">
+                <span className="creed-dot" />
+                <span>WE BUILD FOR OUR COLLEGE, OUR CLUB & OTHER CLUBS</span>
+              </div>
+            </div>
+            <p>Platforms built for real-world impact. We build for our college, our club, and other clubs across campus.</p>
           </div>
           <div className="project-grid">
             {projects.map((project) => (
