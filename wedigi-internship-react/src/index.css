@@ -2292,21 +2292,50 @@ button {
     font-size: 15px;
   }
 
+  .hero {
+    min-height: auto;
+    padding-top: 24px;
+    padding-bottom: 36px;
+    gap: 24px;
+  }
+
   .hero h1 {
-    font-size: clamp(32px, 8vw, 48px);
+    font-size: clamp(32px, 8vw, 46px);
     line-height: 1.15;
+    margin: 12px 0 16px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+    padding: 12px 18px;
   }
 
   /* Single row stats with equal spacing */
   .hero-stats {
     display: flex;
+    align-items: stretch;
     gap: 0;
-    margin-top: 28px;
-    padding-top: 18px;
+    margin-top: 26px;
+    padding-top: 16px;
+    width: 100%;
   }
 
   .hero-stats > div {
-    padding: 0 10px;
+    flex: 1;
+    min-width: 0;
+    padding: 0 8px;
   }
 
   .hero-stats > div:first-child {
@@ -2315,6 +2344,82 @@ button {
 
   .hero-stats > div:last-child {
     padding-right: 0;
+  }
+
+  .hero-stats strong {
+    font-size: 19px;
+  }
+
+  .hero-stats strong span {
+    font-size: 8px;
+  }
+
+  .hero-stats small {
+    font-size: 10px;
+  }
+
+  /* Compact, perfectly framed artwork on mobile */
+  .hero-art {
+    width: 100%;
+    max-width: 440px;
+    height: 280px;
+    margin: 20px auto 0;
+  }
+
+  .laptop {
+    width: 220px;
+    top: 68px;
+  }
+
+  .laptop-screen {
+    height: 132px;
+    padding: 12px 10px;
+  }
+
+  .code-label {
+    font-size: 10px;
+    line-height: 1.45;
+  }
+
+  .code-lines {
+    top: 20px;
+    right: 8px;
+    gap: 6px;
+  }
+
+  .art-note {
+    top: 12px;
+    right: 12px;
+    padding: 6px 9px;
+  }
+
+  .art-note strong {
+    font-size: 9.5px;
+  }
+
+  .desk-table {
+    bottom: 38px;
+    left: 8px;
+    right: 8px;
+  }
+
+  .desk-plant {
+    left: 8px;
+    bottom: 40px;
+    transform: scale(0.6);
+    transform-origin: bottom left;
+  }
+
+  .desk-cup {
+    right: 12px;
+    bottom: 40px;
+    transform: scale(0.65);
+    transform-origin: bottom right;
+  }
+
+  /* Hide scroll cue on mobile to prevent clipping and clutter */
+  .scroll-cue {
+    display: none !important;
   }
 
   .project-grid {
@@ -2366,26 +2471,17 @@ button {
 
 /* Small Screens (<= 480px) */
 @media (max-width: 480px) {
-  .hero-actions {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .hero-actions .button {
-    width: 100%;
-  }
-
   .hero-art {
-    height: 290px;
+    height: 260px;
   }
 
   .laptop {
-    width: 220px;
-    top: 70px;
+    width: 200px;
+    top: 62px;
   }
 
   .laptop-screen {
-    height: 130px;
+    height: 124px;
   }
 
   .site-footer {

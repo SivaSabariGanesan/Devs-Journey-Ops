@@ -45,13 +45,13 @@ const learnings = [
 const responsibilities = [
   { icon: GraduationCap, title: 'College', label: 'ACADEMICS', description: 'Balancing classes, assignments, exams, and continuous academic growth.' },
   { icon: Globe2, title: 'Web Initiatives', label: 'SIDE PROJECTS', description: 'Building and maintaining web platforms alongside other commitments.' },
-  { icon: Laptop, title: 'Internship', label: 'WEDIGISTUDIO', description: 'Working hands-on with the team, contributing to real client and internal products.' },
+  { icon: Laptop, title: 'Internship', label: 'WEDIGI STUDIO', description: 'Working hands-on with the team, contributing to real client and internal products.' },
   { icon: BriefcaseBusiness, title: 'Freelancing', label: 'CLIENT WORK', description: 'Delivering end-to-end client projects with accountability and tight timelines.' },
 ];
 
 const people = [
   { name: 'Swayam', role: 'THE CALL THAT STARTED IT', text: 'For that unexpected call that opened the door to an unforgettable chapter.' },
-  { name: 'Harish PS', role: 'CTO · WEDIGISTUDIO', text: 'For the trust, thoughtful guidance, and freedom to learn through real challenges.' },
+  { name: 'Harish PS', role: 'CTO · WEDIGI STUDIO', text: 'For the trust, thoughtful guidance, and freedom to learn through real challenges.' },
   { name: 'Suriya M', role: 'A PART OF THE JOURNEY', text: 'For the constant encouragement, insightful discussions, and camaraderie.' },
   { name: 'Sanjana', role: 'A PART OF THE JOURNEY', text: 'For making the work atmosphere welcoming, energetic, and memorable.' },
   { name: 'Ram', role: 'A PART OF THE JOURNEY', text: 'For the grounding support, shared perspectives, and valuable advice along the way.' },
@@ -116,7 +116,7 @@ function App() {
   return <>
     <motion.div className="scroll-progress" style={{ scaleX }} />
     <header className="site-header">
-      <a href="#home" className="brand" aria-label="WEDIGIStudio journey home" onClick={() => setMenuOpen(false)}>WEDIGI<span>Studio</span><i> / MY JOURNEY</i></a>
+      <a href="#home" className="brand" aria-label="Wedigi Studio journey home" onClick={() => setMenuOpen(false)}>Wedigi<span> Studio</span><i> / MY JOURNEY</i></a>
       <nav className={menuOpen ? 'nav-links open' : 'nav-links'}>
         {navItems.map(([id, label]) => <a key={id} href={`#${id}`} className={activeSection === id ? 'active' : ''} onClick={() => setMenuOpen(false)}>{label}</a>)}
         <a className="mobile-nav-cta" href="#thanks" onClick={() => setMenuOpen(false)}>The journey <ArrowUpRight size={15}/></a>
@@ -132,7 +132,7 @@ function App() {
         <div className="hero-glow" />
         <motion.div className="hero-copy" initial="hidden" animate="show" variants={stagger}>
           <motion.div className="eyebrow hero-eyebrow" variants={fadeUp}><span className="live-dot"/> THREE MONTHS <b>·</b> LEARN <b>·</b> BUILD <b>·</b> GROW</motion.div>
-          <motion.h1 variants={fadeUp}>My Internship<br/>Journey at<br/><span>WEDIGIStudio<span className="period">.</span></span></motion.h1>
+          <motion.h1 variants={fadeUp}>My Internship<br/>Journey at<br/><span>Wedigi Studio<span className="period">.</span></span></motion.h1>
           <motion.p className="hero-description" variants={fadeUp}>A chapter of learning, building, collaborating, and discovering a better version of myself.</motion.p>
           <motion.div className="hero-actions" variants={fadeUp}><a className="button button-primary" href="#journey">Explore my journey <ArrowDown size={16}/></a><a className="button button-ghost" href="#learnings">What I learned <ArrowUpRight size={16}/></a></motion.div>
           <motion.div className="hero-stats" variants={fadeUp}>
@@ -153,7 +153,7 @@ function App() {
       <section id="journey" className="section-shell story-section section-pad">
         <SectionHeading number="01" eyebrow="THE BEGINNING" title="It started with a random call." description="One conversation. A few doubts. One decision that led to three months I’ll always remember."/>
         <div className="story-layout">
-          <Reveal className="story-copy"><p>When <strong>Swayam</strong> called me about joining WEDIGIStudio for three months, my first thought wasn’t “Wow, that’s exciting!”</p><blockquote>“Can I actually do this? Am I really ready? Can I manage it all? Will I be able to fit in?”</blockquote><p>I had my doubts. I wasn’t sure whether I was the right person for the opportunity. But somewhere between all those questions, I decided to give it a shot.</p><p className="orange-copy">Looking back, I’m glad I did.</p></Reveal>
+          <Reveal className="story-copy"><p>When <strong>Swayam</strong> called me about joining Wedigi Studio for three months, my first thought wasn’t “Wow, that’s exciting!”</p><blockquote>“Can I actually do this? Am I really ready? Can I manage it all? Will I be able to fit in?”</blockquote><p>I had my doubts. I wasn’t sure whether I was the right person for the opportunity. But somewhere between all those questions, I decided to give it a shot.</p><p className="orange-copy">Looking back, I’m glad I did.</p></Reveal>
           <Reveal className="story-aside"><div className="aside-top"><Sparkles size={18}/><span>A NOTE TO MY PAST SELF</span></div><p>You don’t have to have everything figured out before you begin. Sometimes, you grow into the opportunity by showing up.</p><div className="aside-signature">— A lesson from the journey</div><div className="aside-stamp">01<span> / 07</span></div></Reveal>
         </div>
       </section>
@@ -190,7 +190,7 @@ function App() {
       <section id="growth" className="section-shell section-pad growth-section">
         <SectionHeading number="05" eyebrow="THE PERSONAL SIDE" title="The biggest change wasn’t technical." description="I came in with doubts about the work. I didn’t expect to leave with a different perspective on myself, too."/>
         <div className="growth-layout"><Reveal className="growth-art"><div className="sun-disc"/><div className="mountain mountain-back"/><div className="mountain mountain-front"/><div className="tiny-person"><i/><b/></div><div className="growth-art-caption"><span>OUTSIDE THE COMFORT ZONE</span><strong>Room to grow.</strong></div></Reveal>
-          <Reveal className="growth-copy"><div className="eyebrow">A LITTLE MORE OPEN THAN BEFORE</div><h3>I’m a complete introvert by nature.</h3><p>Connecting with new people and starting conversations didn’t always come naturally to me. But the people I met at WEDIGIStudio helped me open up, collaborate more confidently, and see things from a different perspective.</p><p>I learned that being an introvert doesn’t mean you can’t connect with people or put yourself out there. Sometimes, the right environment and the right people help you discover a side of yourself you haven’t explored yet.</p><div className="growth-checks"><div><CheckCircle2 size={17}/> Stepped outside my comfort zone</div><div><CheckCircle2 size={17}/> Grew more confident communicating</div><div><CheckCircle2 size={17}/> Collaborated across different domains</div><div><CheckCircle2 size={17}/> Learned to share what I know</div></div></Reveal>
+          <Reveal className="growth-copy"><div className="eyebrow">A LITTLE MORE OPEN THAN BEFORE</div><h3>I’m a complete introvert by nature.</h3><p>Connecting with new people and starting conversations didn’t always come naturally to me. But the people I met at Wedigi Studio helped me open up, collaborate more confidently, and see things from a different perspective.</p><p>I learned that being an introvert doesn’t mean you can’t connect with people or put yourself out there. Sometimes, the right environment and the right people help you discover a side of yourself you haven’t explored yet.</p><div className="growth-checks"><div><CheckCircle2 size={17}/> Stepped outside my comfort zone</div><div><CheckCircle2 size={17}/> Grew more confident communicating</div><div><CheckCircle2 size={17}/> Collaborated across different domains</div><div><CheckCircle2 size={17}/> Learned to share what I know</div></div></Reveal>
         </div>
       </section>
 
@@ -202,10 +202,10 @@ function App() {
 
       <section id="thanks" className="closing-section section-shell">
         <div className="closing-horizon"><div className="closing-sun"/><div className="closing-ridge ridge-one"/><div className="closing-ridge ridge-two"/><div className="closing-ridge ridge-three"/><div className="closing-person"><i/><b/></div><div className="closing-grain"/></div>
-        <div className="closing-content"><div className="eyebrow"><span className="live-dot"/> END OF CHAPTER · NOT THE END OF LEARNING</div><h2>I joined with doubts.<br/><span>I’m leaving with growth.</span></h2><p>New skills. Meaningful connections. Great memories. And a better understanding of software development — and myself.</p><div className="closing-thanks"><span>With gratitude,</span><strong>Thank you, <em>WEDIGIStudio.</em></strong></div><div className="closing-rule"/><div className="closing-bottom"><p>Same person,<br/><strong>but a better version.</strong></p><a href="#home" className="back-top">BACK TO THE TOP <ArrowUpRight size={15}/></a></div></div>
+        <div className="closing-content"><div className="eyebrow"><span className="live-dot"/> END OF CHAPTER · NOT THE END OF LEARNING</div><h2>I joined with doubts.<br/><span>I’m leaving with growth.</span></h2><p>New skills. Meaningful connections. Great memories. And a better understanding of software development — and myself.</p><div className="closing-thanks"><span>With gratitude,</span><strong>Thank you, <em>Wedigi Studio.</em></strong></div><div className="closing-rule"/><div className="closing-bottom"><p>Same person,<br/><strong>but a better version.</strong></p><a href="#home" className="back-top">BACK TO THE TOP <ArrowUpRight size={15}/></a></div></div>
       </section>
     </main>
-    <footer className="site-footer"><a href="#home" className="brand">WEDIGI<span>Studio</span><i> / MY JOURNEY</i></a><span>MADE WITH GRATITUDE & A LOT OF LEARNING</span><a href="#home" aria-label="Back to top"><ArrowUpRight size={17}/></a></footer>
+    <footer className="site-footer"><a href="#home" className="brand">Wedigi<span> Studio</span><i> / MY JOURNEY</i></a><span>MADE WITH GRATITUDE & A LOT OF LEARNING</span><a href="#home" aria-label="Back to top"><ArrowUpRight size={17}/></a></footer>
   </>;
 }
 
