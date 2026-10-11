@@ -43,19 +43,19 @@ const learnings = [
 ];
 
 const responsibilities = [
-  { icon: GraduationCap, title: 'College', label: 'ACADEMICS', description: 'Keeping up with classes, assignments, and academic responsibilities.' },
-  { icon: Globe2, title: 'Website work', label: 'SIDE PROJECT', description: 'Contributing to the Titanium website alongside other commitments.' },
-  { icon: Laptop, title: 'Internship', label: 'WEDIGISTUDIO', description: 'Working with a team and contributing to real-world development.' },
-  { icon: BriefcaseBusiness, title: 'Freelancing', label: 'CLIENT WORK', description: 'Managing freelance projects and their delivery expectations.' },
+  { icon: GraduationCap, title: 'College', label: 'ACADEMICS', description: 'Balancing classes, assignments, exams, and continuous academic growth.' },
+  { icon: Globe2, title: 'Web Initiatives', label: 'SIDE PROJECTS', description: 'Building and maintaining web platforms alongside other commitments.' },
+  { icon: Laptop, title: 'Internship', label: 'WEDIGISTUDIO', description: 'Working hands-on with the team, contributing to real client and internal products.' },
+  { icon: BriefcaseBusiness, title: 'Freelancing', label: 'CLIENT WORK', description: 'Delivering end-to-end client projects with accountability and tight timelines.' },
 ];
 
 const people = [
-  { name: 'Swayam', role: 'THE CALL THAT STARTED IT', text: 'For the random call that opened the door to this experience.' },
-  { name: 'Harish PS', role: 'CTO · WEDIGISTUDIO', text: 'For the opportunity, guidance, and experience to learn and contribute.' },
-  { name: 'Suriya M', role: 'A PART OF THE JOURNEY', text: 'For the support, conversations, and memorable experiences.' },
-  { name: 'Sanjana', role: 'A PART OF THE JOURNEY', text: 'For helping make the experience welcoming and memorable.' },
-  { name: 'Ram', role: 'A PART OF THE JOURNEY', text: 'For the support and perspective shared along the way.' },
-  { name: 'Dhaanya', role: 'A PART OF THE JOURNEY', text: 'For the support, conversations, and memorable experiences.' },
+  { name: 'Swayam', role: 'THE CALL THAT STARTED IT', text: 'For that unexpected call that opened the door to an unforgettable chapter.' },
+  { name: 'Harish PS', role: 'CTO · WEDIGISTUDIO', text: 'For the trust, thoughtful guidance, and freedom to learn through real challenges.' },
+  { name: 'Suriya M', role: 'A PART OF THE JOURNEY', text: 'For the constant encouragement, insightful discussions, and camaraderie.' },
+  { name: 'Sanjana', role: 'A PART OF THE JOURNEY', text: 'For making the work atmosphere welcoming, energetic, and memorable.' },
+  { name: 'Ram', role: 'A PART OF THE JOURNEY', text: 'For the grounding support, shared perspectives, and valuable advice along the way.' },
+  { name: 'Dhaanya', role: 'A PART OF THE JOURNEY', text: 'For the positive energy, engaging conversations, and support throughout.' },
 ];
 
 const fadeUp = {
@@ -116,12 +116,14 @@ function App() {
   return <>
     <motion.div className="scroll-progress" style={{ scaleX }} />
     <header className="site-header">
-      <a href="#home" className="brand" aria-label="WEDIGIStudio journey home">WEDIGI<span>Studio</span><i> / MY JOURNEY</i></a>
+      <a href="#home" className="brand" aria-label="WEDIGIStudio journey home" onClick={() => setMenuOpen(false)}>WEDIGI<span>Studio</span><i> / MY JOURNEY</i></a>
       <nav className={menuOpen ? 'nav-links open' : 'nav-links'}>
         {navItems.map(([id, label]) => <a key={id} href={`#${id}`} className={activeSection === id ? 'active' : ''} onClick={() => setMenuOpen(false)}>{label}</a>)}
+        <a className="mobile-nav-cta" href="#thanks" onClick={() => setMenuOpen(false)}>The journey <ArrowUpRight size={15}/></a>
       </nav>
+      {menuOpen && <div className="menu-backdrop" onClick={() => setMenuOpen(false)} aria-hidden="true" />}
       <a className="header-cta" href="#thanks">The journey <ArrowUpRight size={15}/></a>
-      <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Close menu' : 'Open menu'}>{menuOpen ? <X/> : <Menu/>}</button>
+      <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Close menu' : 'Open menu'}>{menuOpen ? <X size={20}/> : <Menu size={20}/>}</button>
     </header>
 
     <main>
@@ -136,7 +138,7 @@ function App() {
           <motion.div className="hero-stats" variants={fadeUp}>
             <div><strong>03<span> / MONTHS</span></strong><small>Learning by doing</small></div>
             <div><strong>03<span> / WORKSTREAMS</span></strong><small>Building real things</small></div>
-            <div><strong>∞</strong><small>Lessons to carry forward</small></div>
+            <div><strong>∞<span> / LESSONS</span></strong><small>To carry forward</small></div>
           </motion.div>
         </motion.div>
         <motion.div className="hero-art" initial={{ opacity: 0, scale: .96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1.1, delay: .25 }}>
